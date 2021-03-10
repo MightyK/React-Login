@@ -4,11 +4,7 @@ import Login from './Login';
 let isLoggedIn = false; 
 
 const renderConditionally = () => {
-    if (isLoggedIn) {
-        return <h1>Hello</h1>
-    } else {
-        return <Login />;
-    }
+    return isLoggedIn === true ? <h1>Hello</h1> : <Login />
 };
 
 const App = () => {
